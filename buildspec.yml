@@ -1,0 +1,14 @@
+
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.12
+    commands:
+      - python --version
+
+  build:
+    commands:
+      - python -m compileall -q backend
+      - echo "OlistIQ backend syntax validation completed successfully"
